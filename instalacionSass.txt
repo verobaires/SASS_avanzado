@@ -1,0 +1,4 @@
+  1. npm init -y
+  2. npm install -g sass
+  3. sass --watch scss:css
+   

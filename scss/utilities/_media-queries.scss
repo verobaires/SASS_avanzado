@@ -1,0 +1,54 @@
+@media screen and (max-width: 1024px){
+
+}
+
+@media screen and (max-width: 768px){
+    // Header
+    header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .logo{
+            display: block;
+            width: 100px;
+            margin-left: 25px;
+        }
+
+        input[type="checkbox"] {
+            position: absolute;
+            left: -9999px;
+        }
+
+        #btn_menu:checked ~ .menu{
+            visibility: visible;
+            opacity: 1;             
+        }
+       
+        label {
+            display: flex; // Cambiado a flex para alinear mejor
+            align-items: center; // Centra verticalmente
+            position: relative;
+            right: 25px;
+            img{
+                width: 50px;
+                margin: 0;
+            }    
+        }
+        .menu{
+            position: absolute;
+            top: 98px;
+            background-color: #E8C57E;
+            width: 100vw;
+            visibility: hidden;
+            z-index: 1;
+            transition: visibility 1s, opacity 1s ease;
+            opacity: 0;
+            ul{
+                flex-direction: column;
+            }
+        }
+    }
+    .logo-hidden{
+        display: none;
+    }
+}

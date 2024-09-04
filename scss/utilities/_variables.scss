@@ -1,0 +1,19 @@
+//variables
+$color-principal : #E8C57E;
+
+//lists color: nth($list : $colores, $n : )
+$colores:
+#E8C57E,
+#ffffff,
+#1E1E1E,
+deepskyblue,
+#a44252 ;
+/* importante como entre cada valor y punto y coma al final */
+
+//maps  
+$boton-primario: (
+    bg-primario: #E8C57E,
+    text-primario: #1E1E1E,
+    width-primario: 150px,
+    border-primario: 2px solid #1E1E1E
+);

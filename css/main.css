@@ -1,0 +1,268 @@
+@charset "UTF-8";
+/* importante como entre cada valor y punto y coma al final */
+.button-small {
+  font-size: 20px;
+  padding: 10px;
+}
+
+.button-medium {
+  font-size: 30px;
+  padding: 15px;
+}
+
+.button-large {
+  font-size: 40px;
+  padding: 20px;
+}
+
+.blue {
+  color: blue;
+}
+
+.orange {
+  color: orange;
+}
+
+.yellow {
+  color: yellow;
+}
+
+.l-10 {
+  width: 10px;
+}
+
+.l-150 {
+  width: 150px;
+}
+
+.l-30 {
+  width: 30px;
+}
+
+.l-40 {
+  width: 40px;
+}
+
+.l-500 {
+  width: 500px;
+}
+
+.l-60 {
+  width: 60px;
+}
+
+.l-70 {
+  width: 70px;
+}
+
+.l-80 {
+  width: 80px;
+}
+
+.l-90 {
+  width: 90px;
+}
+
+.l-100 {
+  width: 100px;
+}
+
+.main-nosotros .cards .card, .main-index .nosotros-text {
+  background-color: #E8C57E;
+  color: #1E1E1E;
+  font-size: 15px;
+}
+
+.banner {
+  height: 50vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.banner {
+  background-image: url(../assets/christmas.jpg);
+}
+.banner h1 {
+  color: #E8C57E;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red; en el selector universal para ver el tamaño de cada elemento y cual desborda*/
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.text {
+  color: #1E1E1E;
+  font-size: 35px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header {
+  background-color: #E8C57E;
+}
+header .logo, header label, header #btn_menu {
+  display: none;
+}
+header label {
+  width: 100px;
+}
+header .menu ul {
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  padding: 15px 20px;
+  align-items: center;
+  margin-bottom: 0px;
+}
+header .menu ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 20px;
+}
+header .menu ul li a:hover {
+  text-decoration: underline;
+}
+
+.logo-hidden {
+  width: 100px;
+}
+
+.main-index .banner {
+  height: 450px;
+  background-image: url(./../assets/cake-banner.png);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.main-index .banner a {
+  text-decoration: none;
+  color: black;
+  background-color: #E8C57E;
+  border-radius: 15px;
+  font-size: 18px;
+  margin: 10px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+.main-index .banner a img {
+  width: 18px;
+  padding-left: 5px;
+}
+.main-index .nosotros {
+  display: flex;
+  margin: 50px 40px;
+  justify-content: space-around;
+  column-gap: 30px;
+}
+.main-index .nosotros div {
+  width: 400px;
+}
+.main-index .nosotros div img {
+  width: 100%;
+  height: 100%;
+}
+.main-index .nosotros-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  font-size: 20px;
+}
+.main-index .nosotros-text p {
+  font-size: 25px;
+}
+
+.clase-ejemplo {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: "main main" "header header";
+}
+
+.main-nosotros .cards .card .card-body .btn {
+  background-color: #E8C57E;
+  color: #1E1E1E;
+  width: 150px;
+  border: 2px solid #1E1E1E;
+}
+.main-nosotros .cards .card .card-body .btn:hover {
+  background-color: #1E1E1E;
+  color: #E8C57E;
+}
+
+main p.parrafo--estrecho {
+  margin: 0 auto;
+  text-align: justify;
+  border: 2px solid darkgray;
+  padding: 25px;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .logo, header #btn_menu, header label {
+    display: block;
+    width: 100px;
+    margin-left: 25px;
+  }
+  header input[type=checkbox] {
+    position: absolute;
+    left: -9999px;
+  }
+  header #btn_menu:checked ~ .menu {
+    visibility: visible;
+    opacity: 1;
+  }
+  header label {
+    display: flex;
+    align-items: center;
+    position: relative;
+    right: 25px;
+  }
+  header label img {
+    width: 50px;
+    margin: 0;
+  }
+  header .menu {
+    position: absolute;
+    top: 98px;
+    background-color: #E8C57E;
+    width: 100vw;
+    visibility: hidden;
+    z-index: 1;
+    transition: visibility 1s, opacity 1s ease;
+    opacity: 0;
+  }
+  header .menu ul {
+    flex-direction: column;
+  }
+  .logo-hidden {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

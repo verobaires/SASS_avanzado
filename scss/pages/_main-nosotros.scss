@@ -1,0 +1,19 @@
+.main-nosotros{
+    .cards{
+        .card{
+            @extend %estilos-generales;
+            .card-body{
+                .btn{
+                    background-color: map-get($map: $boton-primario, $key: bg-primario);
+                    color: map-get($map: $boton-primario, $key: text-primario);
+                    width: map-get($map: $boton-primario, $key: width-primario);
+                    border: map-get($map: $boton-primario, $key: border-primario);
+                    &:hover{
+                        background-color: map-get($map: $boton-primario, $key: text-primario);
+                        color: map-get($map: $boton-primario, $key: bg-primario);
+                    }
+                }
+            }
+        }
+    }
+}

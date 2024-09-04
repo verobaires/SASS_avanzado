@@ -1,0 +1,49 @@
+$season: christmas;
+//opciones de season christmas - easter - halloween -newYear - nada
+
+.banner{
+    height: 50vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+
+@if ($season == christmas) {
+    .banner {
+        //cuidado cuando linkean una imagen en un partial deben
+        //pensar que lo estan haciendo desde la carpeta css no scss,
+        //por eso solo tiene una vez ../
+        background-image: url(../assets/christmas.jpg);
+        h1{
+            color: nth($list: $colores, $n: 1);
+        }
+    }
+}@else if ($season == easter) {
+    .banner {
+        background-image: url(../assets/easter.jpg);
+        h1{
+            color: nth($list: $colores, $n: 3);
+        }
+    }
+}@else if ($season == halloween) {
+    .banner {
+        background-image: url(../assets/halloween.png);
+        h1{
+            color: nth($list: $colores, $n: 2);
+        }
+    }
+}@else if ($season == newYear) {
+    .banner {
+        background-image: url(../assets/happy-new-year.jpg);
+        h1{
+            color: nth($list: $colores, $n: 5);
+        }
+       
+    }
+}@else {
+    .banner {
+        background: rgb(234,128,252);
+        background: linear-gradient(41deg, rgba(234,128,252,1) 18%, rgba(229,161,241,1) 41%, rgba(225,190,231,1) 62%, rgba(233,208,238,1) 88%, rgba(243,229,245,1) 100%);
+       
+    }
+} 

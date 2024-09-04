@@ -1,0 +1,8 @@
+1. Instalar live sass compiler y live server
+2. cerrar y abrir nuevamente VSC
+3. crear carpeta scss con archivo .scss dentro
+4. ir a settings -> Live Sass Compile › Settings: Formats
+5. Editar settings.json 
+6. Donde dice savePath vamos a modificar el valor por /css, quedando asi: "savePath": "/css"
+7. abrir el archivo .scss y presionar la opcion "watch sass", que se encuentra debajo (se van a crear dos archivos css)
+8. Luego linkear el nuevo css al html

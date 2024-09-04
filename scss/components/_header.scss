@@ -1,0 +1,49 @@
+header{
+    background-color: #E8C57E;
+    .logo{
+        display: none;
+    }
+    #btn_menu{
+        @extend .logo;
+        // display: none;
+    }
+    label{
+        @extend .logo;
+        width: 100px;
+        // display: none;
+    }
+    .menu{
+        ul{
+            display: flex;
+            list-style: none;
+            justify-content: space-evenly;
+            padding: 15px 20px;
+            align-items: center;
+            margin-bottom: 0px;
+            li{
+                a{
+                    text-decoration: none;
+                    color: #ffffff;
+                    font-size: 20px;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
+.logo-hidden{
+    width: 100px;
+}
+
+// Ejemplo con bem
+
+// .noticia{
+//     &--titulo{
+
+//     }
+//     &--parrafo{
+
+//     }
+// }
