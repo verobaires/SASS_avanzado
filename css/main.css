@@ -80,10 +80,8 @@
 }
 
 .banner {
-  background-image: url(../assets/christmas.jpg);
-}
-.banner h1 {
-  color: #E8C57E;
+  background: rgb(234, 128, 252);
+  background: linear-gradient(41deg, rgb(234, 128, 252) 18%, rgb(229, 161, 241) 41%, rgb(225, 190, 231) 62%, rgb(233, 208, 238) 88%, rgb(243, 229, 245) 100%);
 }
 
 /* Reset */
